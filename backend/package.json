@@ -1,0 +1,25 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "backend for CS 180 project",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --max-old-space-size=8192 server.js",
+    "download_data": "wget https://thelinjson-uploadserver.s3.us-west-1.amazonaws.com/sample_parsed_data.zip && unzip sample_parsed_data.zip",
+    "test": "jest --runInBand",
+    "prettier": "prettier --write '**/*.js'"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "nodemon": "^2.0.14",
+    "prettier": "^2.4.1",
+    "readline": "^1.3.0"
+  },
+  "devDependencies": {
+    "jest": "^27.4.2"
+  }
+}
